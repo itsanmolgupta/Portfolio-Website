@@ -169,3 +169,10 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+/*==================== INPUT FIELD RESET ====================*/ 
+// let btnSubmit = document.getElementById('submit_btn');
+// let inputs = document.querySelectorAll('input');
+
+// btnSubmit.addEventListener('onsubmit', () =>{
+//     inputs.forEach(input => input.value = '');
+// })
