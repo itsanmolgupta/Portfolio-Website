@@ -11,6 +11,13 @@
     <!--==================== SWIPER CSS ====================-->
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 
+    <!--==================== AOS CSS ====================-->
+    <!-- <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  /> -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!--==================== CSS ====================-->
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="icon" href="assets/img/favlogo.png" type="image/png">
@@ -77,9 +84,9 @@
     <!--==================== MAIN ====================-->
     <main class="main">
         <!--==================== HOME ====================-->
-        <section class="home section" id="home">
-            <div class="home__container container grid">
-                <div class="home__content grid">
+        <section class="home section" id="home" >
+            <div class="home__container container grid" >
+                <div class="home__content grid" data-aos="fade-right" data-aos-duration="500">
                     <div class="home__social">
                         <a href="https://www.linkedin.com/in/itsanmolgupta/" target="_blank" title="Linkedin"
                             class="home__social-icon">
@@ -93,7 +100,7 @@
                             <i class="uil uil-envelope-alt"></i>
                         </a>
                     </div>
-                    <div class="home__img">
+                    <div class="home__img" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500">
                         <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink">
                             <mask id="mask0" mask-type="alpha">
@@ -112,12 +119,12 @@
                         </svg>
                     </div>
                     <div class="home__data">
-                        <h1 class="home__title">Hi, It's me Anmol Gupta</h1>
-                        <h3 class="home__subtitle">Computer Engineering Student</h3>
-                        <p class="home__description">Studying Bachelor in Computer Engineering at IOE, Thapathali
+                        <h1 class="home__title" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500">Hi, It's me Anmol Gupta</h1>
+                        <h3 class="home__subtitle" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">Computer Engineering Student</h3>
+                        <p class="home__description" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1500">Studying Bachelor in Computer Engineering at IOE, Thapathali
                             Campus. I've
                             a keen interest in Graphic Designing, UI/UX Design and Web Development.</p>
-                        <a href="#contact" class="button button--flex">Contact Me
+                        <a href="#contact" class="button button--flex" data-aos="fade-right" data-aos-duration="500" data-aos-delay="2000">Contact Me
                             <i class="uil uil-message button__icon"></i>
                         </a>
                     </div>
@@ -134,9 +141,9 @@
 
         <!--==================== ABOUT ====================-->
         <section class="about section" id="about">
-            <h2 class="section__title">About Me</h2>
-            <span class="section__subtitle">My Introduction</span>
-            <div class="about__container container grid">
+            <h2 class="section__title" data-aos="fade-up" data-aos-duration="1000">About Me</h2>
+            <span class="section__subtitle" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">My Introduction</span>
+            <div class="about__container container grid" data-aos="fade-up" data-aos-duration="500" data-aos-delay="500">
                 <img src="assets/img/aboutme.jpg" alt="" class="about__img">
                 <div class="about__data">
                     <p class="about__description">
@@ -167,13 +174,13 @@
 
         <!--==================== SKILLS ====================-->
         <section class="skills section" id="skills">
-            <h2 class="section__title">Skills</h2>
-            <span class="section__subtitle">My Technical Level</span>
-            <div class="skills__container container grid">
+            <h2 class="section__title" data-aos="fade-up" data-aos-duration="1000">Skills</h2>
+            <span class="section__subtitle" data-aos="fade-up" data-aos-duration="500" data-aos-delay="500">My Technical Level</span>
+            <div class="skills__container container grid" data-aos="fade-up" data-aos-duration="500" data-aos-delay="500">
                 <div>
                     <!--==================== SKILLS 1====================-->
-                    <div class="skills__content skills__open">
-                        <div class="skills__header">
+                    <div class="skills__content skills__close">
+                        <div class="skills__header" data-aos="fade-up">
                             <i class="uil uil-brackets-curly skills__icon"></i>
                             <div>
                                 <h1 class="skills__title">Frontend Development</h1>
@@ -343,9 +350,9 @@
 
         <!--==================== QUALIFICATION ====================-->
         <section class="qualification section">
-            <h2 class="section__title">Qualification</h2>
-            <span class="section__subtitle">My Educational Journey</span>
-            <div class="qualification__container container">
+            <h2 class="section__title" data-aos="fade-up" data-aos-duration="1000">Qualification</h2>
+            <span class="section__subtitle" data-aos="fade-up" data-aos-duration="500" data-aos-delay="500">My Educational Journey</span>
+            <div class="qualification__container container" data-aos="fade-up" data-aos-duration="500" data-aos-delay="500">
                 <div class="qualification__tabs">
                     <div class="qualification__button qualification__active" data-target='#education'>
                         <i class="uil uil-graduation-cap qualification__icon"></i>
@@ -409,8 +416,8 @@
 
         <!--==================== SERVICES ====================-->
         <section class="services section" id="services">
-            <h2 class="section__title">Services</h2>
-            <span class="section__subtitle">What I am going to offer in future</span>
+            <h2 class="section__title" data-aos="fade-up" data-aos-duration="1000">Services</h2>
+            <span class="section__subtitle" data-aos="fade-up" data-aos-duration="500" data-aos-delay="500">What I am going to offer in future</span>
             <div class="services__container container grid">
                 <!--==================== SERVICES 1====================-->
                 <div class="services__content">
@@ -509,9 +516,9 @@
 
         <!--==================== PORTFOLIO ====================-->
         <section class="portfolio section" id="portfolio">
-            <h2 class="section__title">Portfolio</h2>
-            <span class="section__subtitle">My Recent Works</span>
-            <div class="portfolio__container container swiper-container">
+            <h2 class="section__title" data-aos="fade-up" data-aos-duration="1000">Portfolio</h2>
+            <span class="section__subtitle" data-aos="fade-up" data-aos-duration="500" data-aos-delay="500">My Recent Works</span>
+            <div class="portfolio__container container swiper-container" data-aos="fade-up" data-aos-duration="500" data-aos-delay="500">
                 <div class="swiper-wrapper">
                     <!--==================== PORTFOLIO 1====================-->
                     <!-- <div class="portfolio__content grid swiper-slide">
@@ -583,9 +590,9 @@
 
         <!--==================== CONTACT ME ====================-->
         <section class="contact section" id="contact">
-            <h2 class="section__title">Contact Me</h2>
-            <span class="section__subtitle">Get In Touch</span>
-            <div class="contact__container container grid">
+            <h2 class="section__title" data-aos="fade-up" data-aos-duration="1000">Contact Me</h2>
+            <span class="section__subtitle" data-aos="fade-up" data-aos-duration="500" data-aos-delay="500">Get In Touch</span>
+            <div class="contact__container container grid" data-aos="fade-up" data-aos-duration="500" data-aos-delay="500">
                 <div>
                     <div class="contact__information">
                         <i class="uil uil-facebook-messenger-alt contact__icon"></i>
@@ -699,6 +706,10 @@
             </p>
         </div>
     </footer>
+    <!-- <script>
+        AOS.init(); -->
+      </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!--==================== SCROLL UP ====================-->
     <a href="#" class="scrollup" id="scroll-up">
@@ -707,6 +718,7 @@
 
     <!--==================== SWIPER JS ====================-->
     <script src="assets/js/swiper-bundle.min.js"></script>
+
 
     <!--==================== MAIN JS ====================-->
     <script src="assets/js/main.js"></script>
