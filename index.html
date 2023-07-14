@@ -124,7 +124,7 @@
                         <p class="home__description" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1500">Studying Bachelor in Computer Engineering at IOE, Thapathali
                             Campus. I've
                             a keen interest in Graphic Designing, UI/UX Design and Web Development.</p>
-                        <a href="#contact" class="button button--flex" data-aos="fade-right" data-aos-duration="500" data-aos-delay="2000">Contact Me
+                        <a href="#contact" class="button button--flex portfolio__button" data-aos="fade-right" data-aos-duration="500" data-aos-delay="2000">Contact Me
                             <i class="uil uil-message button__icon"></i>
                         </a>
                     </div>
@@ -143,7 +143,7 @@
         <section class="about section" id="about">
             <h2 class="section__title" data-aos="fade-up" data-aos-duration="1000">About Me</h2>
             <span class="section__subtitle" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">My Introduction</span>
-            <div class="about__container container grid" data-aos="fade-up" data-aos-duration="500" data-aos-delay="500">
+            <div class="about__container container grid" data-aos="fade-up" data-aos-duration="500" data-aos-delay="800">
                 <img src="assets/img/aboutme.jpg" alt="" class="about__img">
                 <div class="about__data">
                     <p class="about__description">
@@ -164,9 +164,13 @@
                             <span class="about__info-name">Designs<br>Made</span>
                         </div>
                     </div>
-                    <div class="about__buttons">
-                        <a download="" href="assets/pdf/Anmol-CV.pdf" class="button button--flex">Download CV <i
+                    <!-- <div class="about__buttons">
+                        <a download="" href="assets/pdf/Anmol Gupta - CV.pdf" class="button button--flex">Download CV <i
                                 class="uil uil-download-alt button__icon"></i></a>
+                    </div> -->
+                    <div class="about__buttons">
+                        <a href="https://drive.google.com/file/d/1IO6DPd7dysgQsIgoLqydMPTAMyfXLfPG/view?usp=drive_link" target="blank" class="button button--flex portfolio__button">View/Download CV <i
+                                class="uil uil-arrow-right button__icon"></i></a>
                     </div>
                 </div>
             </div>
@@ -175,8 +179,8 @@
         <!--==================== SKILLS ====================-->
         <section class="skills section" id="skills">
             <h2 class="section__title" data-aos="fade-up" data-aos-duration="1000">Skills</h2>
-            <span class="section__subtitle" data-aos="fade-up" data-aos-duration="500" data-aos-delay="500">My Technical Level</span>
-            <div class="skills__container container grid" data-aos="fade-up" data-aos-duration="500" data-aos-delay="500">
+            <span class="section__subtitle" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">My Technical Level</span>
+            <div class="skills__container container grid" data-aos="fade-up" data-aos-duration="500" data-aos-delay="800">
                 <div>
                     <!--==================== SKILLS 1====================-->
                     <div class="skills__content skills__close">
@@ -351,8 +355,8 @@
         <!--==================== QUALIFICATION ====================-->
         <section class="qualification section">
             <h2 class="section__title" data-aos="fade-up" data-aos-duration="1000">Qualification</h2>
-            <span class="section__subtitle" data-aos="fade-up" data-aos-duration="500" data-aos-delay="500">My Educational Journey</span>
-            <div class="qualification__container container" data-aos="fade-up" data-aos-duration="500" data-aos-delay="500">
+            <span class="section__subtitle" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">My Educational Journey</span>
+            <div class="qualification__container container" data-aos="fade-up" data-aos-duration="500" data-aos-delay="800">
                 <div class="qualification__tabs">
                     <div class="qualification__button qualification__active" data-target='#education'>
                         <i class="uil uil-graduation-cap qualification__icon"></i>
@@ -517,8 +521,8 @@
         <!--==================== PORTFOLIO ====================-->
         <section class="portfolio section" id="portfolio">
             <h2 class="section__title" data-aos="fade-up" data-aos-duration="1000">Portfolio</h2>
-            <span class="section__subtitle" data-aos="fade-up" data-aos-duration="500" data-aos-delay="500">My Recent Works</span>
-            <div class="portfolio__container container swiper-container" data-aos="fade-up" data-aos-duration="500" data-aos-delay="500">
+            <span class="section__subtitle" data-aos="fade-up" data-aos-duration="500" data-aos-delay="800">My Recent Works</span>
+            <div class="portfolio__container container swiper-container" data-aos="fade-up" data-aos-duration="500" data-aos-delay="800">
                 <div class="swiper-wrapper">
                     <!--==================== PORTFOLIO 1====================-->
                     <!-- <div class="portfolio__content grid swiper-slide">
@@ -591,8 +595,8 @@
         <!--==================== CONTACT ME ====================-->
         <section class="contact section" id="contact">
             <h2 class="section__title" data-aos="fade-up" data-aos-duration="1000">Contact Me</h2>
-            <span class="section__subtitle" data-aos="fade-up" data-aos-duration="500" data-aos-delay="500">Get In Touch</span>
-            <div class="contact__container container grid" data-aos="fade-up" data-aos-duration="500" data-aos-delay="500">
+            <span class="section__subtitle" data-aos="fade-up" data-aos-duration="500" data-aos-delay="800">Get In Touch</span>
+            <div class="contact__container container grid" data-aos="fade-up" data-aos-duration="500" data-aos-delay="800">
                 <div>
                     <div class="contact__information">
                         <i class="uil uil-facebook-messenger-alt contact__icon"></i>
@@ -626,7 +630,7 @@
                         </div>
                     </div>
                 </div>
-                <form name="contact" action="https://formspree.io/f/xlezvdar" netlify method="POST" class="contact__form grid">
+                <form action="https://formspree.io/f/xlezvdar" method="POST" class="contact__form grid">
                     <div class="contact__inputs grid">
                         <div class="contact__content">
                             <label for="name" class="contact__label">Name</label>
@@ -649,7 +653,7 @@
                             rows="7"></textarea>
                     </div>
                     <div>
-                        <button type="submit" id="submit_btn" class="button button--flex services__button">
+                        <button type="submit" id="submit_btn" class="button button--flex portfolio__button">
                             Send Message
                             <i class="uil uil-message button__icon"></i>
                     </div>
