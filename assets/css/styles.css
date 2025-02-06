@@ -295,7 +295,7 @@ img {
   fill: var(--first-color);
 }
 .home__blob-img{
-  width: 170px;
+  width: 200px;
 }
 .home__data{
   grid-column: 1/3;
@@ -377,12 +377,12 @@ img {
 }
 .about__description{
   text-align: center;
-  margin-bottom: var(--mb-2-5);
+  margin-bottom: var(--mb-1-5);
 }
 .about__info{
   display: flex;
   justify-content: space-evenly;
-  margin-bottom: var(--mb-2-5);
+  margin-bottom: var(--mb-1-5);
 }
 .about__info-title{
   font-size: var(--h2-font-size);
@@ -457,28 +457,31 @@ img {
   background-color: var(--first-color);
 }
 .skills__html{
-  width: 80%;
+  width: 85%;
 }
 .skills__css{
-  width: 60%;
-}
-.skills__js{
-  width: 25%;
-}
-.skills__django{
-  width: 30%;
-}
-.skills__nodejs{
-  width: 10%;
-}
-.skills__mongodb{
-  width: 10%;
-}
-.skills__figma{
   width: 75%;
 }
+.skills__js{
+  width: 65%;
+}
+.skills__reactjs{
+  width: 55%;
+}
+.skills__django{
+  width: 60%;
+}
+.skills__nodejs{
+  width: 40%;
+}
+.skills__mongodb{
+  width: 30%;
+}
+.skills__figma{
+  width: 85%;
+}
 .skills__ai{
-  width: 45%;
+  width: 65%;
 }
 .skills__canva{
   width: 75%;
@@ -490,7 +493,7 @@ img {
   width: 75%;
 }
 .skills__python{
-  width: 45%;
+  width: 65%;
 }
 .skills__close .skills__list{
   height: 0;
@@ -974,7 +977,7 @@ select:-webkit-autofill:focus {
     width: 350px;
   }
   .about__description{
-    text-align: initial;
+    text-align: justify;
   }
   .about__info{
     justify-content: space-between;
@@ -1025,7 +1028,7 @@ select:-webkit-autofill:focus {
   }
 }
 /* For large devices */
-@media screen and (min-width: 1024px) {
+@media screen and (width > 1024px) {
   .header,
   .main,
   .footer__container{
@@ -1036,6 +1039,9 @@ select:-webkit-autofill:focus {
   }
   .home__social{
     transform: translateX(-6rem);
+  }
+  .about__description{
+    text-align: justify;
   }
   .services__container{
     grid-template-columns: repeat(3, 238px);

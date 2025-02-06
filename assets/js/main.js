@@ -76,23 +76,32 @@ const modalViews = document.querySelectorAll('.services__modal'),
 
 let modal = function(modalClick){
     modalViews[modalClick].classList.add('active-modal')
+    document.body.style.overflow = 'hidden'; // Disable scrolling
 }      
+
 modalBtns.forEach((modalBtn, i) => {
-    modalBtn.addEventListener('click',() =>{
+    modalBtn.addEventListener('click', () => {
         modal(i)
     })
 })
-modalCloses.forEach((modalClose) =>{
-    modalClose.addEventListener('click', () =>{
-        modalViews.forEach((modalView) =>{
+
+modalCloses.forEach((modalClose) => {
+    modalClose.addEventListener('click', () => {
+        modalViews.forEach((modalView) => {
             modalView.classList.remove('active-modal')
         })
+        document.body.style.overflow = ''; // Re-enable scrolling
     })
 })
+
 /*==================== PORTFOLIO SWIPER  ====================*/
 let swiper = new Swiper(".portfolio__container", {
     cssMode: true,
     loop: true,
+    autoplay: {
+        delay: 5000,
+    },
+    disableOnInteraction: true,
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
@@ -102,6 +111,7 @@ let swiper = new Swiper(".portfolio__container", {
       clickable: true,
     },
   });
+
 
 /*==================== TESTIMONIAL ====================*/
 
