@@ -77,6 +77,7 @@ const modalViews = document.querySelectorAll('.services__modal'),
 let modal = function(modalClick){
     modalViews[modalClick].classList.add('active-modal')
     document.body.style.overflow = 'hidden'; // Disable scrolling
+    document.addEventListener('touchmove', preventScroll, { passive: false });
 }      
 
 modalBtns.forEach((modalBtn, i) => {
@@ -91,6 +92,7 @@ modalCloses.forEach((modalClose) => {
             modalView.classList.remove('active-modal')
         })
         document.body.style.overflow = ''; // Re-enable scrolling
+        document.removeEventListener('touchmove', preventScroll);
     })
 })
 
